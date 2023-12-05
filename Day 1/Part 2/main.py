@@ -36,7 +36,7 @@ def main():
 
     lines = read_lines()
 
-    for index, line in enumerate(lines):
+    for line in lines:
         match = re.search("(" + regex + "|\d)", line)
         first_digit = transform_number_string(match.group(), False)
 
